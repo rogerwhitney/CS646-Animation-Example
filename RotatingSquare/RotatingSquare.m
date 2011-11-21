@@ -46,9 +46,6 @@
 
 - (void)drawRect:(CGRect)rect
 {
-    if (!rotater) {
-        //   [self initSquareAndTimer];
-    }
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetRGBFillColor (context, 1, 0, 0, 1);
     [self rotateSquare:largeSquare on:context by:degreesToRotate];
