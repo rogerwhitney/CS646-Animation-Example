@@ -6,31 +6,15 @@
 //  Copyright (c) 2011 San Diego State University. All rights reserved.
 //
 
+#import "RWCGUtuls.h"
 #import "RotatingSquare.h"
 
-float degreesToRadians(float degrees);
-float degreesToRadians(float degrees) {
-    return degrees * M_PI/180;
-}
 
+@interface RotatingSquare () 
 
-CGRect rectMake(CGFloat x, CGFloat y,CGSize size);
-CGRect rectMake(CGFloat x, CGFloat y,CGSize size) {
-    return CGRectMake(x, y, size.width, size.height);
-}
-
-
-CGPoint rectCenter(CGRect aRectangle);
-CGPoint rectCenter(CGRect aRectangle) {
-    CGPoint origin = aRectangle.origin;
-    CGSize size  = aRectangle.size;
-    return CGPointMake(origin.x + size.width/2, origin.y + size.height/2);
-}
-CGRect shiftRectCenterToOrigin( CGRect aRectangle);
-CGRect shiftRectCenterToOrigin( CGRect aRectangle) {
-    return rectMake(-aRectangle.size.width/2,-aRectangle.size.height/2,aRectangle.size);
-}
-
+-(void) rotateSquare: (CGRect) aSquare on: (CGContextRef) context by: (CGFloat) degrees;
+-(void) rotate;
+@end
 @implementation RotatingSquare
 
 - (id)initWithFrame:(CGRect)frame
@@ -52,13 +36,18 @@ CGRect shiftRectCenterToOrigin( CGRect aRectangle) {
     CGContextRestoreGState(context);
 }
 
+- (void)initSquareAndTimer
+{
+    largeSquare = CGRectMake(110, 190, 100, 100);
+    smallSquare = CGRectMake(50, 80, 70, 70);
+    rotater = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(rotate) userInfo:nil repeats:YES];
+    [rotater retain];
+}
+
 - (void)drawRect:(CGRect)rect
 {
     if (!rotater) {
-        largeSquare = CGRectMake(110, 190, 100, 100);
-        smallSquare = CGRectMake(50, 80, 70, 70);
-        rotater = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(rotate) userInfo:nil repeats:YES];
-        [rotater retain];
+        //   [self initSquareAndTimer];
     }
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetRGBFillColor (context, 1, 0, 0, 1);

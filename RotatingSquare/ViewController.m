@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "RotatingSquare.h"
+#import "TriangleView.h"
 
 @implementation ViewController
 
@@ -21,7 +23,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	[self.view initSquareAndTimer];
+    TriangleView * trianbleView = [[TriangleView alloc] initWithFrame:CGRectMake(200, 20, 100, 100)];
+    trianbleView.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.0];
+    [self.view addSubview:trianbleView];
 }
 
 - (void)viewDidUnload

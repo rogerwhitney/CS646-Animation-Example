@@ -22,6 +22,7 @@
 		8162B37E1479C6CB009C5EE2 /* RotatingSquareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8162B37D1479C6CB009C5EE2 /* RotatingSquareTests.m */; };
 		8162B3891479C6F6009C5EE2 /* RotatingSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 8162B3881479C6F6009C5EE2 /* RotatingSquare.m */; };
 		8162B38B1479E6FB009C5EE2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8162B38A1479E6FB009C5EE2 /* QuartzCore.framework */; };
+		81E68326147AC1F3009A2DD6 /* TriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E68325147AC1F3009A2DD6 /* TriangleView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,10 @@
 		8162B3871479C6F6009C5EE2 /* RotatingSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotatingSquare.h; sourceTree = "<group>"; };
 		8162B3881479C6F6009C5EE2 /* RotatingSquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotatingSquare.m; sourceTree = "<group>"; };
 		8162B38A1479E6FB009C5EE2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		81E68322147ABF35009A2DD6 /* RWUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWUtils.h; sourceTree = SOURCE_ROOT; };
+		81E68323147ABFCE009A2DD6 /* RWCGUtuls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWCGUtuls.h; sourceTree = "<group>"; };
+		81E68324147AC1F3009A2DD6 /* TriangleView.h */ = {isa = PBXFileReference; fileEncoding = 4; path = TriangleView.h; sourceTree = "<group>"; };
+		81E68325147AC1F3009A2DD6 /* TriangleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriangleView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +123,7 @@
 		8162B3581479C6CB009C5EE2 /* RotatingSquare */ = {
 			isa = PBXGroup;
 			children = (
+				81E68322147ABF35009A2DD6 /* RWUtils.h */,
 				8162B3611479C6CB009C5EE2 /* AppDelegate.h */,
 				8162B3621479C6CB009C5EE2 /* AppDelegate.m */,
 				8162B3641479C6CB009C5EE2 /* ViewController.h */,
@@ -126,6 +132,9 @@
 				8162B3591479C6CB009C5EE2 /* Supporting Files */,
 				8162B3871479C6F6009C5EE2 /* RotatingSquare.h */,
 				8162B3881479C6F6009C5EE2 /* RotatingSquare.m */,
+				81E68323147ABFCE009A2DD6 /* RWCGUtuls.h */,
+				81E68324147AC1F3009A2DD6 /* TriangleView.h */,
+				81E68325147AC1F3009A2DD6 /* TriangleView.m */,
 			);
 			path = RotatingSquare;
 			sourceTree = "<group>";
@@ -271,6 +280,7 @@
 				8162B3631479C6CB009C5EE2 /* AppDelegate.m in Sources */,
 				8162B3661479C6CB009C5EE2 /* ViewController.m in Sources */,
 				8162B3891479C6F6009C5EE2 /* RotatingSquare.m in Sources */,
+				81E68326147AC1F3009A2DD6 /* TriangleView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +448,7 @@
 				8162B3831479C6CB009C5EE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8162B3841479C6CB009C5EE2 /* Build configuration list for PBXNativeTarget "RotatingSquareTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +457,7 @@
 				8162B3861479C6CB009C5EE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

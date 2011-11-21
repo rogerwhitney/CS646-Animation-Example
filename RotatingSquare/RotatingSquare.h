@@ -14,4 +14,7 @@
     int degreesToRotate;
     NSTimer * rotater;
 }
+
+-(void)initSquareAndTimer;
+
 @end
