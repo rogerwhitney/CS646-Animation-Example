@@ -7,6 +7,7 @@
 //
 
 #import "RotatingSquareTests.h"
+#import "Square.h"
 
 @implementation RotatingSquareTests
 
@@ -24,9 +25,13 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testCenterSquare
 {
-    STFail(@"Unit tests are not implemented yet in RotatingSquareTests");
+    Square * ten = [[Square alloc] initWithOrgin:CGPointMake(10,0) size:100];
+     CGPoint  center = [ten center];
+    CGPoint expected = CGPointMake(60, 50);
+    STAssertTrue(expected.x == center.x, @"");
+    STAssertTrue(expected.y == center.y, @"");
 }
 
 @end
