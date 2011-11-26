@@ -7,7 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Square.h"
+#import "TriangleView.h"
 
-@interface ViewController : UIViewController
+/**
+ Animation is driven by the clock. It calls the move method
+ */
+@interface ViewController : UIViewController {
+    Square * fallingSquare;
+    Square * rotatingSquare;
+    NSTimer * clock;
+    TriangleView * triangleView;
+}
+
+-(void) move;
 
 @end
