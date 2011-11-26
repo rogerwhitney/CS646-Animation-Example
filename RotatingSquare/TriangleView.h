@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ Displays in a its own view
+ */
 @interface TriangleView : UIView
 
 @end

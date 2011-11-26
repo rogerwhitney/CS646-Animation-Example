@@ -24,8 +24,6 @@
 {
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetRGBFillColor (context, 0, 1, 0, 1);
-    //CGContextRotateCTM(context, 0.2);
-
     CGContextBeginPath(context);
     CGContextMoveToPoint(context,0,0);
     CGContextAddLineToPoint(context, 0, 50);
