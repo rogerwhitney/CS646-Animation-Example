@@ -20,9 +20,10 @@
 		8162B3731479C6CB009C5EE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8162B3541479C6CB009C5EE2 /* Foundation.framework */; };
 		8162B37B1479C6CB009C5EE2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8162B3791479C6CB009C5EE2 /* InfoPlist.strings */; };
 		8162B37E1479C6CB009C5EE2 /* RotatingSquareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8162B37D1479C6CB009C5EE2 /* RotatingSquareTests.m */; };
-		8162B3891479C6F6009C5EE2 /* RotatingSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 8162B3881479C6F6009C5EE2 /* RotatingSquare.m */; };
+		8162B3891479C6F6009C5EE2 /* AnimatedShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8162B3881479C6F6009C5EE2 /* AnimatedShapeView.m */; };
 		8162B38B1479E6FB009C5EE2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8162B38A1479E6FB009C5EE2 /* QuartzCore.framework */; };
 		81E68326147AC1F3009A2DD6 /* TriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E68325147AC1F3009A2DD6 /* TriangleView.m */; };
+		81E68329147AE096009A2DD6 /* Square.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E68328147AE096009A2DD6 /* Square.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,13 +56,13 @@
 		8162B37A1479C6CB009C5EE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8162B37C1479C6CB009C5EE2 /* RotatingSquareTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RotatingSquareTests.h; sourceTree = "<group>"; };
 		8162B37D1479C6CB009C5EE2 /* RotatingSquareTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RotatingSquareTests.m; sourceTree = "<group>"; };
-		8162B3871479C6F6009C5EE2 /* RotatingSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotatingSquare.h; sourceTree = "<group>"; };
-		8162B3881479C6F6009C5EE2 /* RotatingSquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotatingSquare.m; sourceTree = "<group>"; };
+		8162B3871479C6F6009C5EE2 /* AnimatedShapeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedShapeView.h; sourceTree = "<group>"; };
+		8162B3881479C6F6009C5EE2 /* AnimatedShapeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedShapeView.m; sourceTree = "<group>"; };
 		8162B38A1479E6FB009C5EE2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		81E68322147ABF35009A2DD6 /* RWUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWUtils.h; sourceTree = SOURCE_ROOT; };
-		81E68323147ABFCE009A2DD6 /* RWCGUtuls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWCGUtuls.h; sourceTree = "<group>"; };
-		81E68324147AC1F3009A2DD6 /* TriangleView.h */ = {isa = PBXFileReference; fileEncoding = 4; path = TriangleView.h; sourceTree = "<group>"; };
+		81E68324147AC1F3009A2DD6 /* TriangleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriangleView.h; sourceTree = "<group>"; };
 		81E68325147AC1F3009A2DD6 /* TriangleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriangleView.m; sourceTree = "<group>"; };
+		81E68327147AE096009A2DD6 /* Square.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Square.h; sourceTree = "<group>"; };
+		81E68328147AE096009A2DD6 /* Square.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Square.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,18 +124,18 @@
 		8162B3581479C6CB009C5EE2 /* RotatingSquare */ = {
 			isa = PBXGroup;
 			children = (
-				81E68322147ABF35009A2DD6 /* RWUtils.h */,
 				8162B3611479C6CB009C5EE2 /* AppDelegate.h */,
 				8162B3621479C6CB009C5EE2 /* AppDelegate.m */,
 				8162B3641479C6CB009C5EE2 /* ViewController.h */,
 				8162B3651479C6CB009C5EE2 /* ViewController.m */,
 				8162B3671479C6CB009C5EE2 /* ViewController.xib */,
 				8162B3591479C6CB009C5EE2 /* Supporting Files */,
-				8162B3871479C6F6009C5EE2 /* RotatingSquare.h */,
-				8162B3881479C6F6009C5EE2 /* RotatingSquare.m */,
-				81E68323147ABFCE009A2DD6 /* RWCGUtuls.h */,
+				8162B3871479C6F6009C5EE2 /* AnimatedShapeView.h */,
+				8162B3881479C6F6009C5EE2 /* AnimatedShapeView.m */,
 				81E68324147AC1F3009A2DD6 /* TriangleView.h */,
 				81E68325147AC1F3009A2DD6 /* TriangleView.m */,
+				81E68327147AE096009A2DD6 /* Square.h */,
+				81E68328147AE096009A2DD6 /* Square.m */,
 			);
 			path = RotatingSquare;
 			sourceTree = "<group>";
@@ -279,8 +280,9 @@
 				8162B35F1479C6CB009C5EE2 /* main.m in Sources */,
 				8162B3631479C6CB009C5EE2 /* AppDelegate.m in Sources */,
 				8162B3661479C6CB009C5EE2 /* ViewController.m in Sources */,
-				8162B3891479C6F6009C5EE2 /* RotatingSquare.m in Sources */,
+				8162B3891479C6F6009C5EE2 /* AnimatedShapeView.m in Sources */,
 				81E68326147AC1F3009A2DD6 /* TriangleView.m in Sources */,
+				81E68329147AE096009A2DD6 /* Square.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,7 +381,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RotatingSquare/RotatingSquare-Prefix.pch";
 				INFOPLIST_FILE = "RotatingSquare/RotatingSquare-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -390,7 +394,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RotatingSquare/RotatingSquare-Prefix.pch";
 				INFOPLIST_FILE = "RotatingSquare/RotatingSquare-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
